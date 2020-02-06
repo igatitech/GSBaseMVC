@@ -1,12 +1,14 @@
 # GSBaseMVC
-**GSBaseMVC is a base project which follows MVC(Model-View-Controller) coding pattern**
+**GSBaseMVC is a base project which follows MVC(Model-View-Controller) coding pattern. It provides perfect base structure to start a new project with MVC Architecture.**
 
 ## What is MVC?
 
 ###### The Model-View-Controller concept describes 3 components:
-- Model, a wrapper of data
-- View, a representation of a user interface (UI)
-- Controller, an intermediary between the Model and the View
+- Model: a wrapper of data
+- View: a representation of a user interface (UI)
+- Controller: an intermediary between the Model and the View
+
+![alt text](https://github.com/igatitech/GSBaseMVC/blob/master/Resources/MVC.png)
 
 ###### How the messages can flow from one component to the other:
 - The View tells the Controller when a user interaction takes place
