@@ -1,0 +1,78 @@
+{
+    "data": [
+        {
+            "order_id": "18475937481",
+            "id": "8",
+            "order_date": "10/12/2019",
+            "payment_method": "Cash On Delivery"
+        },
+        {
+            "order_id": "18475937480",
+            "id": "7",
+            "order_date": "12/11/2019",
+            "payment_method": "Card Payment"
+        },
+        {
+            "order_id": "18475937479",
+            "id": "6",
+            "order_date": "21/8/2019",
+            "payment_method": "Cash On Delivery"
+        },
+        {
+            "order_id": "18475937478",
+            "id": "5",
+            "order_date": "20/7/2019",
+            "payment_method": "Card Payment"
+        },
+        {
+            "order_id": "18475937477",
+            "id": "4",
+            "order_date": "11/7/2019",
+            "payment_method": "Card Payment"
+        },
+        {
+            "order_id": "18475937476",
+            "id": "3",
+            "order_date": "18/6/2019",
+            "payment_method": "Cash On Delivery"
+        },
+        {
+            "order_id": "18475937475",
+            "id": "2",
+            "order_date": "05/6/2019",
+            "payment_method": "Cash On Delivery"
+        },
+        {
+            "order_id": "18475937474",
+            "id": "1",
+            "order_date": "01/5/2019",
+            "payment_method": "Card Payment"
+        },
+        {
+            "order_id": "18475937473",
+            "id": "1",
+            "order_date": "26/4/2019",
+            "payment_method": "Cash On Delivery"
+        },
+        {
+            "order_id": "18475937472",
+            "id": "1",
+            "order_date": "22/4/2019",
+            "payment_method": "Cash On Delivery"
+        },
+        {
+            "order_id": "18475937471",
+            "id": "1",
+            "order_date": "01/4/2019",
+            "payment_method": "Cash On Delivery"
+        },
+        {
+            "order_id": "18475937470",
+            "id": "1",
+            "order_date": "07/3/2019",
+            "payment_method": "Card Payment"
+        }
+    ],
+    "status": 1,
+    "message": "Past orders listed successfully!"
+}
