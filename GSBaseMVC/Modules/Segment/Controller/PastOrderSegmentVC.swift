@@ -3,7 +3,7 @@
 //  GSBaseMVC
 //
 //  Created by Gati on 30/01/20.
-//  Copyright © 2020 Gati Shah. All rights reserved.
+//  Copyright © 2020 iGatiTech. All rights reserved.
 //
 
 import UIKit

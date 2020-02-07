@@ -25,19 +25,19 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-    <key>UIAppFonts</key>
-    <array>
-        <string>Gilmer-Bold.otf</string>
-        <string>Gilmer-Heavy.otf</string>
-        <string>Gilmer-Light.otf</string>
-        <string>Gilmer-Medium.otf</string>
-        <string>Gilmer-Regular.otf</string>
-        <string>Montserrat-Bold.ttf</string>
-        <string>Montserrat-Light.ttf</string>
-        <string>Montserrat-Medium.otf</string>
-        <string>Montserrat-Regular.ttf</string>
-        <string>Montserrat-SemiBold.ttf</string>
-    </array>
+	<key>UIAppFonts</key>
+	<array>
+		<string>Gilmer-Bold.otf</string>
+		<string>Gilmer-Heavy.otf</string>
+		<string>Gilmer-Light.otf</string>
+		<string>Gilmer-Medium.otf</string>
+		<string>Gilmer-Regular.otf</string>
+		<string>Montserrat-Bold.ttf</string>
+		<string>Montserrat-Light.ttf</string>
+		<string>Montserrat-Medium.otf</string>
+		<string>Montserrat-Regular.ttf</string>
+		<string>Montserrat-SemiBold.ttf</string>
+	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>
 		<key>UIApplicationSupportsMultipleScenes</key>

@@ -3,7 +3,7 @@
 //  GreenNet_User
 //
 //  Created by Gati on 25/09/19.
-//  Copyright © 2019 Gati Shah. All rights reserved.
+//  Copyright © 2020 iGatiTech. All rights reserved.
 //
 
 import Foundation

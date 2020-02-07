@@ -3,8 +3,8 @@
 //  NetworkManager.swift
 //  BaseProject_MVC
 //
-//  Created by Gati Shah on 02/08/19.
-//  Copyright © 2019 Gati Shah. All rights reserved.
+//  Created by iGatiTech on 02/08/19.
+//  Copyright © 2020 iGatiTech. All rights reserved.
 //
 
 import Foundation

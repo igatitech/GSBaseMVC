@@ -3,7 +3,7 @@
 //  GreenNet-Distributor
 //
 //  Created by Gati on 21/10/19.
-//  Copyright © 2019 Gati Shah. All rights reserved.
+//  Copyright © 2020 iGatiTech. All rights reserved.
 //
 
 import Foundation
