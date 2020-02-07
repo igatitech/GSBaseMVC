@@ -1,6 +1,6 @@
 //
 //  TableHeaderView.swift
-//  BaseProject_MVC
+//  GSBaseMVC
 //
 //  Created by iGatiTech on 07/09/19.
 //  Copyright © 2020 iGatiTech. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  UIImageExtension.swift
-//  GreenNet_User
+//  GSBaseMVC
 //
 //  Created by Gati on 23/01/20.
 //  Copyright © 2020 iGatiTech. All rights reserved.

@@ -1,6 +1,6 @@
 //
 //  UIDeviceExtension.swift
-//  GreenNet_User
+//  GSBaseMVC
 //
 //  Created by Gati on 24/09/19.
 //  Copyright © 2020 iGatiTech. All rights reserved.

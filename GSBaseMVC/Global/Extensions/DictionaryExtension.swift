@@ -1,6 +1,6 @@
 //
 //  DictionaryExtension.swift
-//  GreenNet_User
+//  GSBaseMVC
 //
 //  Created by Gati on 22/01/20.
 //  Copyright © 2020 iGatiTech. All rights reserved.

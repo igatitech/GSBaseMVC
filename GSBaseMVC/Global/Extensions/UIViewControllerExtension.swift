@@ -1,6 +1,6 @@
 //
 //  UIViewControllerExtension.swift
-//  GreenNet-Distributor
+//  GSBaseMVC
 //
 //  Created by Gati on 21/10/19.
 //  Copyright © 2020 iGatiTech. All rights reserved.
