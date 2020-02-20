@@ -82,6 +82,7 @@ You can find more about me here : [Gati Shah](https://igati.tech)
 
 If you wish to contact me, 
 Email at: [connect@igati.tech](connect@igati.tech)
+
 Reach me on: [LinkedIn](https://www.linkedin.com/in/igatitech/)
 
 ## License
