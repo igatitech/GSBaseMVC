@@ -71,6 +71,10 @@ This project has used other third party libraries available on GitHub as mention
 - [SDWebImage](https://github.com/SDWebImage/SDWebImage)
 - [SJSegmentedScrollView](https://github.com/subinspathilettu/SJSegmentedViewController)
 
+**Happy Coding! Cheers!!** 🥂 
+
+## Author
+If you wish to contact me, email at: [gati1993@gmail.com](gati1993@gmail.com)
 
 ## License
 Copyright 2020 iGatiTech

@@ -2,7 +2,7 @@
 //  CollectionCell.swift
 //  GSBaseMVC
 //
-//  Created by iGatiTech on 07/09/19.
+//  Created by Gati on 07/09/19.
 //  Copyright © 2020 iGatiTech. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  UIButtonExtension.swift
 //  GSBaseMVC
 //
-//  Created by iGatiTech on 15/09/19.
+//  Created by Gati on 15/09/19.
 //  Copyright © 2020 iGatiTech. All rights reserved.
 //
 
