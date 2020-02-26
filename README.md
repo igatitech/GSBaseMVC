@@ -1,3 +1,6 @@
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/igatitech/GSBaseMVC/blob/master/LICENSE) 
+![Swift: 5.0.x](https://img.shields.io/badge/Swift-5.0.x-orange)
+
 # GSBaseMVC
 **GSBaseMVC is a base project which follows MVC(Model-View-Controller) coding pattern. It provides perfect base structure to start a new project with MVC Architecture.**
 
