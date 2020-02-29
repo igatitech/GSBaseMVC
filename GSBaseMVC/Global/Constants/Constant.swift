@@ -61,6 +61,7 @@ enum Storyboards : String {
     case Authentication = "Authentication"
     case TableCollection = "TableCollection"
     case Segment = "Segment"
+    case Localize = "Localize"
 }
 
 //MARK:- NavigationControllerIdentifier
@@ -74,4 +75,5 @@ enum Titles : String {
     case normalCollectionView = "Normal CollectionView"
     case segmentController = "SJSegment Controller"
     case segmentControllerHeader = "SJSegment Controller with Header"
+    case languageLocalization = "Language Localization"
 }

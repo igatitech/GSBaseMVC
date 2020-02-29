@@ -36,6 +36,7 @@
 - SJSegment Controller with Header
 - PullToRefresh for all the listings
 - Pagination in TableView
+- Language Localization
 
 
 ## How to run the project?

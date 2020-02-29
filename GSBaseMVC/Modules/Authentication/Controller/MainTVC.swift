@@ -12,7 +12,7 @@ class MainTVC: UITableViewController {
     //MARK:- IBOutlets
     
     //MARK:- Variables
-    let arrTitles : [Titles] = [.normalTableView, .normalCollectionView, .segmentController, .segmentControllerHeader]
+    let arrTitles : [Titles] = [.normalTableView, .normalCollectionView, .segmentController, .segmentControllerHeader, .languageLocalization]
     
     //MARK:- View Controller Life Cycle Methods
     override func viewDidLoad() {
@@ -58,6 +58,13 @@ class MainTVC: UITableViewController {
         }
         self.navigationController?.pushViewController(vcProfile, animated: true)
     }
+    
+    func pushToLanguageLocaliseScreen() {
+        guard let vcInfo = GetViewController(StoryBoard: .Localize, Identifier: .Info) else {
+            return
+        }
+        self.navigationController?.pushViewController(vcInfo, animated: true)
+    }
 
     // MARK: - Table view data source & delegate methods
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -85,8 +92,12 @@ class MainTVC: UITableViewController {
             pushToNormalCollectionViewSceen()
         case 2:
             pushToSJSegmentControllerScreen()
-        default:
+        case 3:
             pushToSJSegmentControllerWithHeaderScreen()
+        case 4:
+            pushToLanguageLocaliseScreen()
+        default:
+            print("Defualt Case")
         }
     }
 

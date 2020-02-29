@@ -68,6 +68,14 @@ extension String {
         }
         return n
     }
+    
+    func localizableString(langCode : String) -> String {
+        guard let path = Bundle.main.path(forResource: langCode, ofType: "lproj") else {
+            return ""
+        }
+        let bundle = Bundle(path: path)
+        return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
+    }
 
 }
 

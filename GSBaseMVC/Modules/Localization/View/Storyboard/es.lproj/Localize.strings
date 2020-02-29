@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "The key to success is to focus on goals, not obstacles."; ObjectID = "QYw-fy-ekg"; */
+"QYw-fy-ekg.text" = "The key to success is to focus on goals, not obstacles.";
+
+/* Class = "UILabel"; text = "Look for something positive in each day, even if some days you have to look a little harder."; ObjectID = "cwa-S5-4BD"; */
+"cwa-S5-4BD.text" = "Look for something positive in each day, even if some days you have to look a little harder.";
+
+/* Class = "UISegmentedControl"; gjm-mr-0u6.segmentTitles[0] = "English"; ObjectID = "gjm-mr-0u6"; */
+"gjm-mr-0u6.segmentTitles[0]" = "English";
+
+/* Class = "UISegmentedControl"; gjm-mr-0u6.segmentTitles[1] = "Spenish"; ObjectID = "gjm-mr-0u6"; */
+"gjm-mr-0u6.segmentTitles[1]" = "Spenish";

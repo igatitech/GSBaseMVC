@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--InfoVC-->
+        <scene sceneID="r6e-aQ-YzS">
+            <objects>
+                <viewController storyboardIdentifier="InfoVC" id="ajo-QB-Jqp" customClass="InfoVC" customModule="GSBaseMVC" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6x6-sS-ldl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gjm-mr-0u6">
+                                <rect key="frame" x="91.5" y="40" width="137" height="32"/>
+                                <segments>
+                                    <segment title="English"/>
+                                    <segment title="Spenish"/>
+                                </segments>
+                                <connections>
+                                    <action selector="languageChangeSegmentChange:" destination="ajo-QB-Jqp" eventType="valueChanged" id="gKh-S6-mQB"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The key to success is to focus on goals, not obstacles." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QYw-fy-ekg">
+                                <rect key="frame" x="16" y="121" width="288" height="41"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Look for something positive in each day, even if some days you have to look a little harder." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cwa-S5-4BD">
+                                <rect key="frame" x="16" y="182" width="288" height="61.5"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="cwa-S5-4BD" firstAttribute="trailing" secondItem="QYw-fy-ekg" secondAttribute="trailing" id="7Ck-Gs-amQ"/>
+                            <constraint firstItem="cwa-S5-4BD" firstAttribute="leading" secondItem="QYw-fy-ekg" secondAttribute="leading" id="AfE-wT-2V0"/>
+                            <constraint firstItem="QYw-fy-ekg" firstAttribute="leading" secondItem="zMf-NI-INg" secondAttribute="leading" constant="16" id="etp-Wu-6lp"/>
+                            <constraint firstItem="gjm-mr-0u6" firstAttribute="top" secondItem="zMf-NI-INg" secondAttribute="top" constant="40" id="g6P-Ok-A8t"/>
+                            <constraint firstItem="cwa-S5-4BD" firstAttribute="top" secondItem="QYw-fy-ekg" secondAttribute="bottom" constant="20" id="hKx-Kh-shD"/>
+                            <constraint firstItem="gjm-mr-0u6" firstAttribute="centerX" secondItem="6x6-sS-ldl" secondAttribute="centerX" id="muB-aI-Rcs"/>
+                            <constraint firstItem="zMf-NI-INg" firstAttribute="trailing" secondItem="QYw-fy-ekg" secondAttribute="trailing" constant="16" id="nY3-A8-TC0"/>
+                            <constraint firstItem="QYw-fy-ekg" firstAttribute="top" secondItem="gjm-mr-0u6" secondAttribute="bottom" constant="50" id="qkv-SA-Jb5"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zMf-NI-INg"/>
+                    </view>
+                    <connections>
+                        <outlet property="labelQuote1" destination="QYw-fy-ekg" id="fNu-tT-C7X"/>
+                        <outlet property="labelQuote2" destination="cwa-S5-4BD" id="UkS-2V-bco"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a4j-WR-7Wj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="95.625" y="78.16901408450704"/>
+        </scene>
+    </scenes>
+</document>

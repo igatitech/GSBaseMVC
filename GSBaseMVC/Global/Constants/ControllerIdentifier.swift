@@ -20,5 +20,6 @@ enum ControllerIdentifier : String {
     case ProfileSegmentHeader = "ProfileSegmentHeaderVC"
     case ProfileFollowingSegment = "ProfileFollowingSegmentVC"
     case ProfileFollowerSegment = "ProfileFollowerSegmentVC"
+    case Info = "InfoVC"
     
 }
