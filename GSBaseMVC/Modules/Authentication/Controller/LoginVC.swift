@@ -92,7 +92,7 @@ extension LoginVC {
 //MARK:- TextField Delegate Methods
 extension LoginVC : UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
-        textField.changeResponder(textFields: [textFieldEmail, textFieldPassword])
+        textField.changeResponder(currentTextField: textField, textFields: [textFieldEmail, textFieldPassword])
         return true
     }
 }

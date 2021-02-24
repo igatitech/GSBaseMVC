@@ -48,9 +48,9 @@ class PastOrderTableCell: UITableViewCell {
         self.labelOrderIdTitle.setUpLabel(title: StringConstant.MyOrder.orderId, titleColor: .white, titleFont: GetAppFont(FontType: .Gilmer_Regular, FontSize: .Regular))
         self.labelOrderId.setUpLabel(title: "", titleColor: .white, titleFont: GetAppFont(FontType: .Gilmer_Bold, FontSize: .Regular))
         
-        self.labelName.setUpLabel(title: "", titleColor: .appTextBlack, titleFont: GetAppFont(FontType: .Gilmer_Medium, FontSize: .Medium))
-        self.labelPaymentMethod.setUpLabel(title: StringConstant.MyOrder.paymentMethod, titleColor: .appTextBlack, titleFont: GetAppFont(FontType: .Gilmer_Regular, FontSize: .Small))
-        self.labelOrderDate.setUpLabel(title: StringConstant.MyOrder.orderOn, titleColor: .appTextBlack, titleFont: GetAppFont(FontType: .Gilmer_Regular, FontSize: .Small))
+        self.labelName.setUpLabel(title: "", titleColor: .black, titleFont: GetAppFont(FontType: .Gilmer_Medium, FontSize: .Medium))
+        self.labelPaymentMethod.setUpLabel(title: StringConstant.MyOrder.paymentMethod, titleColor: .black, titleFont: GetAppFont(FontType: .Gilmer_Regular, FontSize: .Small))
+        self.labelOrderDate.setUpLabel(title: StringConstant.MyOrder.orderOn, titleColor: .black, titleFont: GetAppFont(FontType: .Gilmer_Regular, FontSize: .Small))
     }
     
     func setUpData() {

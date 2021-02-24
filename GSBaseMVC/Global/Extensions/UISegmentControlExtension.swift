@@ -1,15 +1,15 @@
 //
 //  UISegmentControlExtension.swift
-//  GSBaseMVC
+//  Unbox
 //
-//  Created by Gati on 02/08/19.
-//  Copyright © 2020 iGatiTech. All rights reserved.
+//  Created by Gati on 24/08/20.
+//  Copyright © 2019 Gati Shah. All rights reserved.
 //
 
 import UIKit
 
 extension UISegmentedControl {
-    func defaultConfiguration(font: UIFont = UIFont.systemFont(ofSize: 12), color: UIColor = UIColor.gray) {
+    func defaultConfiguration(font: UIFont = UIFont.systemFont(ofSize: 12), color: UIColor = .gray) {
         let defaultAttributes = [
             NSAttributedString.Key.font: font,
             NSAttributedString.Key.foregroundColor: color
@@ -17,7 +17,7 @@ extension UISegmentedControl {
         setTitleTextAttributes(defaultAttributes, for: .normal)
     }
     
-    func selectedConfiguration(font: UIFont = UIFont.boldSystemFont(ofSize: 12), color: UIColor = UIColor.red) {
+    func selectedConfiguration(font: UIFont = UIFont.boldSystemFont(ofSize: 12), color: UIColor = .red) {
         let selectedAttributes = [
             NSAttributedString.Key.font: font,
             NSAttributedString.Key.foregroundColor: color
@@ -28,7 +28,7 @@ extension UISegmentedControl {
     func removeBorders(backgroundColor : UIColor, tintColor : UIColor) {
         setBackgroundImage(imageWithColor(color: backgroundColor), for: .normal, barMetrics: .default)
         setBackgroundImage(imageWithColor(color: tintColor), for: .selected, barMetrics: .default)
-        setDividerImage(imageWithColor(color: UIColor.clear), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
+        setDividerImage(imageWithColor(color: .clear), forLeftSegmentState: .normal, rightSegmentState: .normal, barMetrics: .default)
     }
     
     private func imageWithColor(color: UIColor) -> UIImage {

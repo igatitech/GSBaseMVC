@@ -26,9 +26,14 @@ class MainTableCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    class func instanceFromNib() -> MainTableCell {
+        return UINib(nibName: CellIdentifier.MainTableCell, bundle: nil).instantiate(withOwner: nil, options: nil)[0] as! MainTableCell
+    }
+    
     //MARK:- Custom Methods
     func setUpView() {
         self.accessoryType = .disclosureIndicator
+        labelTitle.setUpLabel(title: "", titleColor: .black, titleFont: GetAppFont(FontType: .Gilmer_Regular, FontSize: .Regular))
     }
     
 }

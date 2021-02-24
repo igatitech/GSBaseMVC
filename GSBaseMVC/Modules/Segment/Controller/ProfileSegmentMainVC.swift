@@ -45,14 +45,14 @@ class ProfileSegmentMainVC: UIViewController {
                                                             segmentControllers: [firstViewController,secondViewController])
         
         segmentedViewController.segmentViewHeight = 50.0
-        segmentedViewController.segmentBackgroundColor = .appTextBlack
+        segmentedViewController.segmentBackgroundColor = .black
         segmentedViewController.segmentSelectedTitleColor = .white
         segmentedViewController.headerViewHeight = 200
         segmentedViewController.headerViewOffsetHeight = 0
         /*//Keep the headerViewOffsetHeight equal to headerViewHeight, if you want header stick at the top and does not scroll view tableview/scrollview
         segmentedViewController.headerViewOffsetHeight = 200*/
         segmentedViewController.selectedSegmentViewHeight = 3.0
-        segmentedViewController.segmentTitleColor = .appTextDarkGray
+        segmentedViewController.segmentTitleColor = .darkGray
         segmentedViewController.selectedSegmentViewColor = .white
         segmentedViewController.segmentShadow = SJShadow.light()
         segmentedViewController.showsHorizontalScrollIndicator = false
@@ -69,7 +69,7 @@ extension ProfileSegmentMainVC: SJSegmentedViewControllerDelegate {
     
     func didMoveToPage(_ controller: UIViewController, segment: SJSegmentTab?, index: Int) {
         if selectedSegment != nil {
-            selectedSegment?.titleColor(.appTextLightGray)
+            selectedSegment?.titleColor(.lightGray)
         }
         
         if segmentedViewController.segments.count > 0 {

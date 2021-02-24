@@ -1,9 +1,9 @@
 //
 //  StringExtension.swift
-//  GSBaseMVC
+//  Unbox
 //
-//  Created by Gati on 02/08/19.
-//  Copyright © 2020 iGatiTech. All rights reserved.
+//  Created by Gati on 24/08/20.
+//  Copyright © 2019 Gati Shah. All rights reserved.
 //
 
 import Foundation
@@ -77,24 +77,50 @@ extension String {
         return NSLocalizedString(self, tableName: nil, bundle: bundle!, value: "", comment: "")
     }
 
+    public var convertHtmlToNSAttributedString: NSAttributedString? {
+            guard let data = data(using: .utf8) else {
+                return nil
+            }
+            do {
+                return try NSAttributedString(data: data,options: [.documentType: NSAttributedString.DocumentType.html,.characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+            }
+            catch {
+                print(error.localizedDescription)
+                return nil
+            }
+        }
+
+        public func convertHtmlToAttributedStringWithCSS(font: UIFont? , csscolor: String , lineheight: Int, csstextalign: String) -> NSAttributedString? {
+            guard let font = font else {
+                return convertHtmlToNSAttributedString
+            }
+            let modifiedString = "<style>body{font-family: '\(font.fontName)'; font-size:\(font.pointSize)px; color: \(csscolor); line-height: \(lineheight)px; text-align: \(csstextalign); }</style>\(self)";
+            guard let data = modifiedString.data(using: .utf8) else {
+                return nil
+            }
+            do {
+                return try NSAttributedString(data: data, options: [.documentType: NSAttributedString.DocumentType.html, .characterEncoding: String.Encoding.utf8.rawValue], documentAttributes: nil)
+            }
+            catch {
+                print(error)
+                return nil
+            }
+        }
 }
 
 extension NSMutableAttributedString {
     
     func setColorForText(textForAttribute: String, withColor color: UIColor) {
         let range: NSRange = self.mutableString.range(of: textForAttribute, options: .caseInsensitive)
+        
+        // Swift 4.2 and above
         self.addAttribute(NSAttributedString.Key.foregroundColor, value: color, range: range)
     }
     
-    func getAttributedSignUpString(strPartOne : String, strPartTwo : String) -> NSMutableAttributedString{
+    func setFontForText(textForAttribute: String, withFont font: UIFont) {
+        let range: NSRange = self.mutableString.range(of: textForAttribute, options: .caseInsensitive)
         
-        let attributeColor : [NSAttributedString.Key : Any] = [NSAttributedString.Key(rawValue: NSAttributedString.Key.foregroundColor.rawValue) : UIColor.appRed, NSAttributedString.Key(rawValue: NSAttributedString.Key.font.rawValue):GetAppFont(FontType:.Gilmer_Regular, FontSize: .ExtraLarge)]
-        let partOne = (NSMutableAttributedString(string: strPartOne, attributes: attributeColor))
-        let partTwo = (NSMutableAttributedString(string: strPartTwo, attributes: attributeColor))
-        let combination = NSMutableAttributedString()
-        combination.append(partOne)
-        combination.append(NSAttributedString(string: " "))
-        combination.append(partTwo)
-        return combination
+        // Swift 4.2 and above
+        self.addAttribute(NSAttributedString.Key.font, value: font, range: range)
     }
 }

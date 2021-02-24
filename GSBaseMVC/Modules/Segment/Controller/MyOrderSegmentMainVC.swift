@@ -39,7 +39,7 @@ class MyOrderSegmentMainVC: UIViewController {
                                                             segmentControllers: [firstViewController,secondViewController])
         segmentedViewController.segmentViewHeight = 50.0
         segmentedViewController.selectedSegmentViewHeight = 3.0
-        segmentedViewController.segmentTitleColor = .appGray
+        segmentedViewController.segmentTitleColor = .gray
         segmentedViewController.selectedSegmentViewColor = .black
         segmentedViewController.segmentShadow = SJShadow.light()
         segmentedViewController.showsHorizontalScrollIndicator = false

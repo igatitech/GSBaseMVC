@@ -9,7 +9,11 @@
 import Foundation
 import UIKit
 
+//MARK:- Global Constant
 let buttonCornerRadius : CGFloat = 7.0
+let textFieldLeftPadding : CGFloat = 10
+let textFieldRightPadding : CGFloat = 28
+
 let dateFormatter = DateFormatter()
 var deviceTokenString = ""
 

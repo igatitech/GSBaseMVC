@@ -1,25 +1,25 @@
 //
 //  UserDefaultExtension.swift
-//  GSBaseMVC
+//  GatiShah_iOS
 //
-//  Created by Gati on 02/08/19.
-//  Copyright © 2020 iGatiTech. All rights reserved.
+//  Created by Gati on 07/08/19.
+//  Copyright © 2019 Tamgy. All rights reserved.
 //
 
 import Foundation
 
 extension UserDefaults {
-    func decode<T : Codable>(for type : T.Type, using key : String) -> T? {
+    func decode<T : Codable>(for type : T.Type, using key : CacheKeys) -> T? {
         let defaults = UserDefaults.standard
-        guard let data = defaults.object(forKey: key) as? Data else {return nil}
+        guard let data = defaults.object(forKey: key.rawValue) as? Data else {return nil}
         let decodedObject = try? PropertyListDecoder().decode(type, from: data)
         return decodedObject
     }
     
-    func encode<T : Codable>(for type : T, using key : String) {
+    func encode<T : Codable>(for type : T, using key : CacheKeys) {
         let defaults = UserDefaults.standard
         let encodedData = try? PropertyListEncoder().encode(type)
-        defaults.set(encodedData, forKey: key)
+        defaults.set(encodedData, forKey: key.rawValue)
         defaults.synchronize()
     }
     

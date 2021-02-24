@@ -2,7 +2,7 @@
 ![Swift: 5.0.x](https://img.shields.io/badge/Swift-5.0.x-orange)
 
 # GSBaseMVC
-**GSBaseMVC is a base project which follows MVC(Model-View-Controller) coding pattern. It provides perfect base structure to start a new project with MVC Architecture.**
+**GSBaseMVC is a base project which follows MVC(Model-View-Controller) coding pattern.**
 
 ## What is MVC?
 
@@ -43,13 +43,16 @@
 
 - Make sure you have an active internet connection and connected with a Physical device or you can use Xcode Simulator too.
 - download or clone the project
+- Open the terminal
+- cd project_path
+- pod install
 - Open .xcworkspace file from your project folder
 - Run the project from Xcode
 
 ## Coding Standards Implemented
 
 - MVC Architecture
-- Swift Language(Version: 5.1)
+- Swift Language(Version: 5.2)
 - Followed Apple Human User Interface Guidelines
 - Used Pods for other third-party libraries
 - Used Asset Catalog for Images used in the application

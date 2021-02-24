@@ -1,9 +1,9 @@
 //
 //  UIViewExtension.swift
-//  GSBaseMVC
+//  GatiShah_iOS
 //
-//  Created by Gati on 02/08/19.
-//  Copyright © 2020 iGatiTech. All rights reserved.
+//  Created by Gati Shah on 07/08/19.
+//  Copyright © 2019 Tamgy. All rights reserved.
 //
 
 import Foundation
@@ -16,7 +16,7 @@ enum VerticalLocation: String {
 
 extension UIView
 {
-    func showToast(toastMessage:String,duration:CGFloat? = 0.3)
+    func showToast(toastMessage:String, duration:CGFloat? = 0.3, delay: Double = 1)
     {
         //View to blur bg and stopping user interaction
         let bgView = UIView(frame: self.frame)
@@ -49,7 +49,7 @@ extension UIView
             lblMessage.alpha = 1
         }, completion: {
             sucess in
-            UIView.animate(withDuration: TimeInterval(duration ?? 0.0), delay: 1, options: [], animations: {
+            UIView.animate(withDuration: TimeInterval(duration ?? 0.0), delay: delay, options: [], animations: {
                 lblMessage.alpha = 0
                 bgView.alpha = 0
             }, completion: { (success) in
@@ -142,9 +142,9 @@ extension UIView
         }
     }
     
-    func roundCorners(cornerMasks : CACornerMask) {
+    func roundCorners(cornerRadius : CGFloat, cornerMasks : CACornerMask) {
         clipsToBounds = true
-        layer.cornerRadius = 10
+        layer.cornerRadius = cornerRadius
         layer.maskedCorners = cornerMasks
     }
     
@@ -162,9 +162,10 @@ extension UIView
     
     func makeCircular(radius : CGFloat? , borderWidth : CGFloat? ,borderColor : UIColor?)  {
         self.clipsToBounds = true
-        self.borderWidth = borderWidth ?? 0.0
-        self.borderColor = borderColor ?? UIColor.clear
+        self.layer.borderWidth = borderWidth ?? 0.0
+        self.layer.borderColor = borderColor?.cgColor
         self.layer.cornerRadius = radius ?? self.frame.width/2
+        self.layer.masksToBounds = true
     }
     
     //MARK:- Show/HideView
@@ -192,21 +193,22 @@ extension UIView
         })
     }
     
-    func addShadow(location: VerticalLocation, color: UIColor = .black, opacity: Float = 0.15, radius: CGFloat = 1.0) {
+    func addShadow(location: VerticalLocation, color: UIColor = .black, opacity: Float = 0.15, radius: CGFloat = 1.0, cornerRadius: CGFloat = 0.0) {
         switch location {
         case .bottom:
-            showShadow(offset: CGSize(width: 0, height: 2), color: color, opacity: opacity, radius: radius)
+            showShadow(offset: CGSize(width: 0, height: 2), color: color, opacity: opacity, radius: radius, cornerRadius: cornerRadius)
         case .top:
-            showShadow(offset: CGSize(width: 0, height: -2), color: color, opacity: opacity, radius: radius)
+            showShadow(offset: CGSize(width: 0, height: -2), color: color, opacity: opacity, radius: radius, cornerRadius: cornerRadius)
         }
     }
     
-    func showShadow(offset: CGSize, color: UIColor = .black, opacity: Float = 0.15, radius: CGFloat = 1.0) {
+    func showShadow(offset: CGSize, color: UIColor = .black, opacity: Float = 0.15, radius: CGFloat = 1.0, cornerRadius : CGFloat? = 0.0) {
         self.layer.masksToBounds = false
         self.layer.shadowColor = color.cgColor
         self.layer.shadowOffset = offset
         self.layer.shadowOpacity = opacity
         self.layer.shadowRadius = radius
+        self.layer.cornerRadius = cornerRadius ?? 0.0
     }
 }
 extension CGFloat

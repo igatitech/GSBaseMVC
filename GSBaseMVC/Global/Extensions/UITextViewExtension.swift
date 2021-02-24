@@ -1,15 +1,16 @@
 //
 //  UITextViewExtension.swift
-//  GSBaseMVC
+//  Unbox
 //
-//  Created by Gati on 02/08/19.
-//  Copyright © 2020 iGatiTech. All rights reserved.
+//  Created by Gati on 24/08/20.
+//  Copyright © 2019 Gati Shah. All rights reserved.
 //
 
 import UIKit
 
 extension UITextView {
-    func setUpTextView(textColor : UIColor, font : UIFont) {
+    func setUpTextView(text : String, textColor : UIColor, font : UIFont) {
+        self.text = text
         self.textColor = textColor
         self.font = font
     }

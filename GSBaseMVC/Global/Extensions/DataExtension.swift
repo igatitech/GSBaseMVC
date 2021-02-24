@@ -1,19 +1,14 @@
 //
 //  DataExtension.swift
-//  GSBaseMVC
+//  Unbox
 //
-//  Created by Gati on 23/01/20.
-//  Copyright © 2020 iGatiTech. All rights reserved.
+//  Created by Gati on 24/08/20.
+//  Copyright © 2020 Gati Shah. All rights reserved.
 //
 
 import Foundation
 
 extension Data {
-
-    var hexString: String {
-        let hexString = map { String(format: "%02.2hhx", $0) }.joined()
-        return hexString
-    }
     
   var format: String {
     let array = [UInt8](self)
@@ -32,5 +27,10 @@ extension Data {
     }
     return ext
    }
+    
+    var hexString: String {
+        let hexString = map { String(format: "%02.2hhx", $0) }.joined()
+        return hexString
+    }
     
 }

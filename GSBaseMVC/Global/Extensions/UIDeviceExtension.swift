@@ -1,9 +1,9 @@
 //
 //  UIDeviceExtension.swift
-//  GSBaseMVC
+//  Unbox
 //
-//  Created by Gati on 24/09/19.
-//  Copyright © 2020 iGatiTech. All rights reserved.
+//  Created by Gati on 24/08/20.
+//  Copyright © 2019 Gati Shah. All rights reserved.
 //
 
 import Foundation
@@ -86,7 +86,7 @@ extension UIDevice {
             }
         }
         
-        var modelMap : [String: Model] = [
+        let modelMap : [String: Model] = [
             
             //Simulator
             "i386"      : .simulator,
