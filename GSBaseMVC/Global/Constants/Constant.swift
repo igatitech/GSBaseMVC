@@ -56,7 +56,7 @@ struct DateFormat {
 }
 
 //MARK:- Images
-struct CommonImg {
+struct AppImages {
     static let placeholder = "placeholder"
 }
 

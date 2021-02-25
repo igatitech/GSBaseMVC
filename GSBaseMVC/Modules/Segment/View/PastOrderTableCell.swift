@@ -55,9 +55,10 @@ class PastOrderTableCell: UITableViewCell {
     
     func setUpData() {
         self.labelOrderId.text = pastData?.order_id
-        self.imageViewItem?.sd_setImage(with: URL(string: dummyImage?.download_url ?? "") , placeholderImage: UIImage(named: CommonImg.placeholder), options: .fromCacheOnly)
         self.labelName.text = dummyImage?.author
         self.labelPaymentMethod.text = "\(StringConstant.MyOrder.paymentMethod) \(pastData?.payment_method ?? "")"
         self.labelOrderDate.text = "\(StringConstant.MyOrder.orderOn) \(pastData?.order_date ?? "")"
+//        self.imageViewItem?.sd_setImage(with: URL(string: dummyImage?.download_url ?? "") , placeholderImage: UIImage(named: AppImages.placeholder), options: .fromCacheOnly)
+        imageViewItem.sd_setImage(with: URL(string: ""), placeholderImage: UIImage(named: AppImages.placeholder), options: .refreshCached)
     }
 }
